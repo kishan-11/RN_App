@@ -1,11 +1,17 @@
 import React, {memo} from 'react';
-import {Text, View} from 'react-native';
+import {SafeAreaView, View} from 'react-native';
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      />
+    </SafeAreaView>
   );
 };
 

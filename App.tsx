@@ -15,7 +15,7 @@ const App: React.FC<Props> = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <NavigationContainer>
-          <Stack.Navigator>
+          <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen name="Home" component={Home} />
           </Stack.Navigator>
         </NavigationContainer>
